@@ -2,7 +2,7 @@
 
 In this programming assignment, we are going to explore a classic in
 Computer Science\! This is Conway's Game of of life. It will be a good
-practice for using arrays, as well as making use of our nice termmanip.h
+practice for using vectors, as well as making use of our nice termmanip.h
 library.
 
 Conway's game of life was created by John Conway, a British
@@ -30,9 +30,9 @@ arrangement is used to generate the next "generation" of cells. The fate
 of each cell is determined by it's neighbors. Take for instance, the
 cell 0. The X's are it's neighbors:
 
-`   XXX`  
-`   X0X`  
-`   XXX`
+`XXX`  
+`X0X`  
+`XXX`
 
 So each cell has 8 neighboring cells. The number of living neighbors
 surrounding a cell are what determines what the cell does in the next
@@ -49,30 +49,34 @@ cell's state, determines what the cell does. Generally, this results in
 weird and wonderful patterns. There are some patterns that are
 interesting, however. Take for instance:
 
-`     ***`
+`   `
+`***`
+`   `
 
 Following those rules, there are two possible iterations which this
 oscillates through.
 
-`     ***`
-
+`   `
+`***`
+`   `
 Followed by:
 
-`      *`  
-`      *`  
-`      *`
+` * `  
+` * `  
+` * `
 
 Then:
 
-`     ***`
-
+`   `
+`***`
+`   `
 And so on. This is called a spinner. The next interesting one is the
 glider. Use a sheet of paper and checkout what the glider does:
 
-` *`  
+` * `  
 `  *`  
 `***`  
-` `
+`   `
 
 The glider moves\! How cool is that?
 
